@@ -1,0 +1,19 @@
+<%- include('../partials/header') %>
+<div class="contents">
+<div class="card-deck">
+<% posts.forEach(function(p) { %>
+    <div class="card border-info mb-3">
+        <div class="card-body text-info">
+            <h5 class="card-title"><%= p.title %></h5>
+            <p class="card-text"><%= p.body %></p>
+        </div>
+        <div class="card-footer text-muted">
+            <p class="dates"><%= p.createdAt.toLocaleDateString()%></p>
+            <a href="/posts/<%= p._id %>" class="detailsbtn btn btn-info">Details</a>
+            <h5 class="topic">Topic: <%=p.topics%></h5>
+        </div>
+    </div>
+<% }); %>
+</div>
+</div>
+<%- include('../partials/footer') %>

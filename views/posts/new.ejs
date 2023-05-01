@@ -1,0 +1,41 @@
+<%- include('../partials/header') %>
+
+
+
+<div class="card border-info mb-3">
+    <div class="card-title">
+        <h1>Create a new bubble</h1>
+    </div>
+   
+    <div class="card-body">
+        <form id="new-post" action="/posts" method="post">
+            <div class="card-body">
+                <input name="title" type="text" placeholder="Title">
+            </div>
+            <div class="card-body">
+                <textarea form="new-post" name="body" type="text" placeholder="Add your post here" rows="6" cols="70"></textarea>
+            </div>
+            <div class="card-body">
+                <select name="topics" id="">
+                    <option value="Gaming">Gaming</option>
+                    <option value="Pop-Culture">Pop Culture</option>
+                    <option value="Anime">Anime</option>
+                    <option value="Movies">Movies</option>
+                    <option value="Music">Music</option>
+                    <option value="Books">Books</option>
+                    <option value="Whatifs">What ifs</option>
+                    <option value="Code">Coding</option>
+                    <option value="Huh???">???</option>
+                </select>
+                <button type="submit">Post</button>
+            </div> 
+        </form>
+    </div>
+</div>
+
+
+
+
+  
+    
+<%- include('../partials/footer') %>

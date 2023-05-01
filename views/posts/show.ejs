@@ -1,0 +1,41 @@
+<%- include('../partials/header') %>
+
+<div class="contents">
+
+    <div class="card border-info mb-3">
+        <div class="card-body text-info">
+            <h5 class="card-title text-dark"><%= post.title %></h5>
+            <p class="card-text"><%= post.body %></p>
+        </div>
+        <div class="card-footer text-muted">
+            <p><%= post.createdAt.toLocaleDateString()%></p>
+            <p><%=post.topic%></p>
+            <form action="/posts/<%=post.id%>?_method=DELETE" id="delete-form" method="POST"><button class="deletebtn btn-sm btn btn-danger" type="submit">Pop Bubble</button></form>
+            <a href="/posts/<%=post.id%>/edit"><button class="editbtn btn-sm btn btn-info">Rethink that</button></a> 
+        </div>
+    </div>
+</div>
+
+
+<div class="comments-section">
+    <div id="addcom">
+        <h3>Comments</h3>
+
+        <form id="comment-form" method="POST" action="/posts/<%= post._id %>/comments">
+            <input type="text" name="body" placeholder="Write a comment" autocomplete="off">
+            <button class="btn-sm btn btn-outline-info" type="submit">Add Comment</button>
+        </form>
+    </div>
+  
+
+<% post.comments.forEach(function(c) { %>
+    <div class="card border-info mb-3">
+        <div class="card-body text-info">
+            <p class="card-text"><%= c.body %></p>
+        </div>
+            <p><%= c.createdAt.toLocaleDateString()%></p>
+    </div>
+<%})%>
+
+</div>
+<%- include('../partials/footer') %>

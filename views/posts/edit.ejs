@@ -1,0 +1,33 @@
+<%- include('../partials/header') %>
+
+<div class="card border-info mb-3">
+    <div class="card-title">
+        <h1>Maybe change that thought bubble...<br> Or keep it to yourself</h1>
+    </div>
+    <div class="card-body">
+        <form id="edit-post" action="/posts/<%= post.id %>?_method=PUT" method="POST">
+            <div class="card-body">
+                <input name="title" type="text" placeholder="<%= post.title%>">
+            </div>
+            <div class="card-body">
+                <textarea form="new-post" name="body" type="text" placeholder="<%= post.body%>" rows="6" cols="70"></textarea>
+            </div>
+            <div class="card-body">
+                <select name="topics" id="">
+                    <option value="Gaming">Gaming</option>
+                    <option value="Pop-Culture">Pop Culture</option>
+                    <option value="Anime">Anime</option>
+                    <option value="Movies">Movies</option>
+                    <option value="Music">Music</option>
+                    <option value="Books">Books</option>
+                    <option value="Whatifs">What ifs</option>
+                    <option value="Code">Coding</option>
+                    <option value="Huh???">???</option>
+                </select>
+                <button class="submit" type="submit">Rethink</button>
+            </div> 
+        </form>
+    </div>
+</div>
+
+<%- include('../partials/footer') %>

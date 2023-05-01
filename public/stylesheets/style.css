@@ -1,0 +1,137 @@
+/* all da tingz */
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+nav a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+nav a:hover, nav a:visited, nav a:link, nav a:active {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+
+
+/* Welcome page tingz */
+#welcome {
+  background-image: url('../images/Thought-bubbles.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.centered {
+  color: black;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 90px;
+  height: 250px;
+  width: 400px;
+  padding: 5px;
+  z-index: 100;
+  text-align: center;
+}
+
+.centered a {
+  text-decoration: none;
+  color: black;
+}
+
+
+/* Head tingz */
+ header {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background-color: #7dd1e4;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  text-align:center;
+  border-bottom: 5px solid black;
+  font-size: 45px;
+ }
+nav {
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #7dd1e4;
+  overflow-x: hidden;
+  padding-top: 90px;
+  color: whitesmoke;
+  text-decoration: none;
+  border-right: 5px solid black ;
+}
+
+/* body tings */
+.contents {
+  margin: 0 auto;
+}
+main {
+  width: 80%;
+  text-align: center;
+  margin-left: 250px;
+  margin-top: 50px;
+ }
+.card {
+  width: 80%;
+  right: 0;
+}
+#addcom {
+  margin-right: 150px;
+  margin-bottom: 20px;
+}
+ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+li {
+  margin-bottom: 40px;
+  text-decoration: none;
+}
+.title{
+  margin-right: 150px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: center;
+}
+input {
+  text-align: center;
+}
+textarea {
+  text-align: center;
+}
+.detailsbtn{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.deletebtn{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.editbtn{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.dates{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.topic{
+  padding-left: 10px;
+  padding-right: 0px;
+}

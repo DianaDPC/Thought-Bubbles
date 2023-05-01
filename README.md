@@ -1,6 +1,6 @@
 # Thought Bubbles
 
-### Thought Bubbles is a site that was built as a reddit clone, it allows users to post anonymous thoughts on several different topics. No authentification has been implemented as of yet. But feel free to add your own thoughts and read through the ones available.
+### Thought Bubbles is a site that was built as a simple reddit clone, it allows users to post anonymous thoughts on several different topics. No authentification has been implemented as of yet. But feel free to add your own thoughts and read through the ones available.
 ___________
 
 ### On the main screen users are greeted with the sites name
